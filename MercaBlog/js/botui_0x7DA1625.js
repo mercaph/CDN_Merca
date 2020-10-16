@@ -5,27 +5,22 @@ A=O.context;var S=!A._isMounted||!n.isRootInsert;if(!S||x||""===x){var T=S&&d?d:
 /*波推回复*/
 function bot_ui_ini(){
 	var botui=new BotUI("hello-mashiro");botui.message.add({delay:800,content:"Hej,👋"})
-	.then(function(){botui.message.add({delay:1100,content:"这里是Quincy😝"})
-	.then(function(){botui.message.add({delay:1100,content:"一个很莽的女孩子~"})
+	.then(function(){botui.message.add({delay:1100,content:"我喜欢你👻~"})
+	.then(function(){botui.message.add({delay:1100,content:"想和你一起打游戏，一起做很多好玩的事~"})
+	.then(function(){botui.message.add({delay:1100,content:"一起学习，一起做很多好玩的事~"})
+	.then(function(){botui.message.add({delay:1100,content:"一起做很多好玩的事~"})
 	.then(function(){
 		botui.action.button({
 		delay:1600,action:[
-		{text:"然后呢？ 😃",value:"sure"},
-		{text:"少废话！ 🙄",value:"skip"}]})
-	.then(function(a){"sure"==a.value&&sure();"skip"==a.value&&end()})})})});var sure=function(){botui.message.add({delay:800,content:"那我继续瞎逼逼了🙈"})
-	.then(function(){secondpart()})},end=function(){botui.message.add({delay:800,content:"罢了罢了~Have a nice day!"})},secondpart=function(){botui.message.add({delay:1500,content:"目前在交换就读于Umeå University, 学习Physics~😬"})
-	.then(function(){botui.message.add({delay:1500,content:"之前就读于深圳大学，光电方向~"})
-	.then(function(){botui.message.add({delay:1200,content:"啥都有好奇，啥都尝试的实践派，莽就对了,,船到桥头自然直~"})
-	.then(function(){botui.message.add({delay:1500,content:"Undergraduate, 希望能顺利申请到硕士😂"})
-	.then(function(){botui.action.button({delay:1100,action:[{text:"为什么叫MercaPH呢？🤔",value:"why-mashiro"}]})
-	.then(function(a){thirdpart()})})})})})},thirdpart=function(){botui.message.add({delay:1e3,content:"因为喜欢关于地图的东西，'Merca'来自‘Mercator projection’墨卡托投影~"})
-	.then(function(){botui.message.add({delay:1500,content:"PH是名字里的缩写👻"})
-	.then(function(){botui.action.button({delay:1500,action:[{text:"有什么爱好吗？👊",value:"why-cat"}]})
-	.then(function(a){fourthpart()})})})},fourthpart=function(){botui.message.add({delay:1e3,content:"比较擅长画画🎨，设计海报，拍摄📷，剪视频，打篮球🏀听歌🎵啥的~当然还是老B站用户了👌"})
-	.then(function(){botui.message.add({delay:1100,content:"老单机用户惹🎮~"})
-	.then(function(){botui.action.button({delay:1500,action:[{text:"能加个联系方式吗？🙋",value:"why-domain"}]})
-	.then(function(a){fifthpart()})})})},fifthpart=function(){botui.message.add({delay:1e3,content:"这波..😚一起打游戏啊hhh~~"})
-	.then(function(){botui.message.add({delay:1600,content:"当然可以加我la，不过要备注哟!"})
-	.then(function(){botui.message.add({delay:1500,content:"也欢迎您留言，我会及时回复的。🍺🍺🍺"})})})}}
+		{text:"然后呢？ 😃",value:"sure"}]})
+	.then(function(a){"sure"==a.value&&sure();})})})});var sure=function(){botui.message.add({delay:800,content:"那我继续瞎逼逼了🙈"})
+	.then(function(){secondpart()})},secondpart=function(){botui.message.add({delay:1500,content:"如果你接受了👌"})
+	.then(function(){botui.message.add({delay:1500,content:"你在我这的优先级是很高的🎈~"})
+	.then(function(){botui.message.add({delay:1500,content:"我会真的替你着想，你可以慢慢发现我其实挺有用的~"})
+	.then(function(){botui.message.add({delay:1200,content:"如果你拒绝了🙃"})
+	.then(function(){botui.message.add({delay:1200,content:"我也不会再追你，毕竟被不喜欢的人追会很烦~"})
+	.then(function(){botui.message.add({delay:1500,content:"你不必考虑我的心情，但是请给我一个明确的答案😋"})
+	.then(function(){botui.message.add({delay:1500,content:"谢谢！👾"})
+})})}}
 //rebuild by neat 
 bot_ui_ini();
