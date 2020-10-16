@@ -28,13 +28,13 @@ function bot_ui_ini(){
 	.then(function(){botui.message.add({delay:1100,content:"一起学习✍，"})
 	.then(function(){botui.message.add({delay:1100,content:"一起做很多好玩的事❄~"})
 	.then(function(){botui.action.button({delay:1100,action:[{text:"然后呢？🤔",value:"why-mashiro"}]})
-	.then(function(){secondpart()})})})})})})}),
-	secondpart=function(){botui.message.add({delay:1500,content:"如果你接受了👌"})
+	.then(function(a){secondpart()})})})})})})}),
+	secondpart=function(){botui.message.add({delay:1e3,content:"如果你接受了👌"})
 	.then(function(){botui.message.add({delay:1500,content:"你在我这的优先级是很高的🎈~"})
-	.then(function(){botui.message.add({delay:1200,content:"我会真的替你着想，你可以慢慢发现我其实挺有用的~"})
+	.then(function(){botui.message.add({delay:1500,content:"我会真的替你着想，你可以慢慢发现我其实挺有用的~"})
 	.then(function(){botui.message.add({delay:1500,content:"如果你拒绝了🙃"})
 	.then(function(){botui.message.add({delay:1200,content:"我也不会再追你，毕竟被不喜欢的人追会很烦~"})
 	.then(function(){botui.message.add({delay:1500,content:"你不必考虑我的心情，但是请给我一个明确的答案😋"})
-	.then(function(){botui.message.add({delay:1500,content:"谢谢🙈"})})})})})})})}}
+	.then(function(){botui.message.add({delay:1500,content:"谢谢!🙈"})})})})})})})}}
 //rebuild by neat 
 bot_ui_ini();
