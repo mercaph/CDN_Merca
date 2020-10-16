@@ -12,10 +12,11 @@ function bot_ui_ini(){
 		delay:1600,action:[
 		{text:"然后呢？ 😃",value:"sure"},
 		{text:"少废话！ 🙄",value:"skip"}]})
-	.then(function(a){"sure"==a.value&&sure();"skip"==a.value&&end()})})})});var sure=function(){botui.message.add({delay:800,content:"那我继续瞎逼逼了🙈"})
+	.then(function(a){"sure"==a.value&&sure();"skip"==a.value&&end()})})})});
+	var sure=function(){botui.message.add({delay:800,content:"那我继续瞎逼逼了🙈"})
 	.then(function(){secondpart()})},end=function(){botui.message.add({delay:800,content:"罢了罢了~Have a nice day!"})},secondpart=function(){botui.message.add({delay:1500,content:"目前在交换就读于Umeå University, 学习Physics~😬"})
 	.then(function(){botui.message.add({delay:1500,content:"之前就读于深圳大学，光电方向~"})
-	.then(function(){botui.message.add({delay:1200,content:"啥都有好奇，啥都尝试的实践派，莽就对了,,船到桥头自然直~"})
+	.then(function(){botui.message.add({delay:1200,content:"啥都有好奇，啥都尝试的实践派，莽就对了,船到桥头自然直~"})
 	.then(function(){botui.message.add({delay:1500,content:"Undergraduate, 希望能顺利申请到硕士😂"})
 	.then(function(){botui.action.button({delay:1100,action:[{text:"为什么叫MercaPH呢？🤔",value:"why-mashiro"}]})
 	.then(function(a){thirdpart()})})})})})},thirdpart=function(){botui.message.add({delay:1e3,content:"因为喜欢关于地图的东西，'Merca'来自‘Mercator projection’墨卡托投影~"})

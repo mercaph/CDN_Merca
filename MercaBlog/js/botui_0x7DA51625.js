@@ -6,7 +6,7 @@ A=O.context;var S=!A._isMounted||!n.isRootInsert;if(!S||x||""===x){var T=S&&d?d:
 function bot_ui_ini(){
 	var botui=new BotUI("hello-mashiro");botui.message.add({delay:800,content:"Hej,👋"})
 	.then(function(){botui.message.add({delay:1100,content:"我喜欢你👻~"})
-	.then(function(){botui.message.add({delay:1100,content:"想和你一起打游戏，一起做很多好玩的事~"})
+	.then(function(){botui.message.add({delay:1100,content:"想和你一起打游戏,"})
 	.then(function(){botui.message.add({delay:1100,content:"一起学习，一起做很多好玩的事~"})
 	.then(function(){botui.message.add({delay:1100,content:"一起做很多好玩的事~"})
 	.then(function(){
